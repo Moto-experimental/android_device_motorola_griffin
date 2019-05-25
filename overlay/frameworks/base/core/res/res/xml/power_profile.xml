@@ -111,6 +111,6 @@
         <value>488</value>
         <value>590</value>
     </array>
-    <item name="cpu.idle">5</item>
-    <item name="cpu.awake">25</item>
+    <item name="cpu.suspend">5</item>
+    <item name="cpu.idle">25</item>
 </device>
