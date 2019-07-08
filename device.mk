@@ -179,10 +179,9 @@ PRODUCT_PACKAGES += \
     sap.conf \
     xtwifi.conf
 
-# Gatekeeper HAL
+# Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl:64 \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service.software
 
 # HDR
 PRODUCT_COPY_FILES += \

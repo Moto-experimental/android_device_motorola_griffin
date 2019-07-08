@@ -405,9 +405,6 @@ lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
 vendor/lib64/hw/fingerprint.msm8996.so
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so
 
-# Gatekeeper - griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
-vendor/lib64/hw/gatekeeper.msm8996.so
-
 # GPS
 vendor/bin/garden_app
 vendor/bin/loc_launcher
