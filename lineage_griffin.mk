@@ -30,6 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    device/motorola/griffin/overlay-lineage/lineage-sdk \
     device/motorola/griffin/overlay/packages/apps/CarrierConfig
 
 # Boot animation
