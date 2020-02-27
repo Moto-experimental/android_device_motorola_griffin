@@ -103,7 +103,8 @@ BOARD_KERNEL_CMDLINE := \
     sched_enable_power_aware=1 \
     app_setting.use_32bit_app_setting=1 \
     kpti=1 \
-    cnsscore.pcie_link_down_panic=1
+    cnsscore.pcie_link_down_panic=1 \
+    androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz
