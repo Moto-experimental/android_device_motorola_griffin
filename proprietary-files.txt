@@ -132,6 +132,9 @@ vendor/lib/camera.device@1.0-impl.so|13a93ca1a2e58e813f32f0c6348f6c1ad7937454
 # Camera from deen user-9-PPKS29.68-16-33-17-c4e01-release-keys
 vendor/lib/libmmcamera_dcrf_lib.so|842981218abe798073158dbf380bbefa8dc2d065
 
+# Camera - from Hydrogen 7.0/NRD90M/V10.3.2.0.NBCCNXM
+vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
+
 # Camera firmware from griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
 etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
 
