@@ -407,12 +407,6 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
-# Thermal
-PRODUCT_PACKAGES += \
-    thermal.msm8996 \
-    android.hardware.thermal@1.0-impl:64 \
-    android.hardware.thermal@1.0-service
-
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
