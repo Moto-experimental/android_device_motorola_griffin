@@ -74,6 +74,15 @@ function blob_fixup() {
             done
             ;;
 
+        # Fix encryption blob names
+        vendor/lib64/hw/gatekeeper.msm8996.so)
+            "${PATCHELF}" --set-soname gatekeeper.msm8996.so "${2}"
+            ;;
+
+        vendor/lib64/hw/keystore.msm8996.so)
+            "${PATCHELF}" --set-soname keystore.msm8996.so "${2}"
+            ;;
+
         # Fix thermal engine config path
         vendor/bin/thermal-engine)
             sed -i "s|/system/etc/thermal|/vendor/etc/thermal|g" "${2}"
