@@ -124,7 +124,7 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed libstagefright.so "${2}"
             ;;
 
-        vendor/lib64/hw/gatekeeper.msm8996.so | vendor/lib64/hw/keystore.msm8996.so | vendor/lib64/lib_fpc_tac_shared.so | vendor/lib64/libSecureUILib.so)
+        vendor/lib64/hw/gatekeeper.msm8996.so | vendor/lib64/lib_fpc_tac_shared.so | vendor/lib64/libSecureUILib.so)
             sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
             ;;
 

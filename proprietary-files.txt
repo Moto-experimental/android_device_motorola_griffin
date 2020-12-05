@@ -597,12 +597,6 @@ vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 
-# Keystore - griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
-vendor/lib64/hw/keystore.msm8996.so
-
-# Keymaster - griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
-vendor/lib64/libkeymasterprovision.so
-
 # ModService - from nash
 -priv-app/ModFmwkProxyService/ModFmwkProxyService.apk|52c72bfeae28e2a0b1e96b4336bc6c01ee95bdea
 etc/permissions/com.motorola.aov.xml|e62f765d60a7e39f4a33437f5626ecf0e77c1dba
