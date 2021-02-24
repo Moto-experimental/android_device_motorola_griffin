@@ -34,6 +34,8 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
 endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    device/motorola/griffin/overlay/packages/apps/CarrierConfig
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
