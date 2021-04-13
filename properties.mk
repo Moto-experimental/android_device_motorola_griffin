@@ -154,6 +154,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
 
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.ims.disableADBLogs=2 \
+    persist.vendor.ims.disableDebugLogs=0 \
+    persist.vendor.ims.disableQXDMLogs=0 \
+    persist.vendor.ims.disableIMSLogs=0 \
+    persist.vendor.ims.vt.enableadb=1
+
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.readahead.enable=false \
+    iorapd.perfetto.enable=false \
+    ro.iorapd.enable=false
+
 # Mods
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.mod.platformsdkversion=205
@@ -178,17 +195,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase.gmm=android-motorola \
     ro.com.google.clientidbase.ms=android-motorola \
     ro.com.google.clientidbase.yt=android-motorola
-
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
-    persist.vendor.ims.disableADBLogs=2 \
-    persist.vendor.ims.disableDebugLogs=0 \
-    persist.vendor.ims.disableQXDMLogs=0 \
-    persist.vendor.ims.disableIMSLogs=0 \
-    persist.vendor.ims.vt.enableadb=1
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
