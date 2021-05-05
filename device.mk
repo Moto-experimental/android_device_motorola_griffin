@@ -347,8 +347,7 @@ PRODUCT_ODM_PROPERTIES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson \
-    libtinyxml
+    libjson
 
 # Ramdisk
 PRODUCT_PACKAGES += \
