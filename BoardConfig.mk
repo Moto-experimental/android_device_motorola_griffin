@@ -110,6 +110,7 @@ BOARD_DTBTOOL_ARGS := --force-v3
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := griffin_defconfig
+TARGET_KERNEL_RECOVERY_CONFIG := griffin_recovery_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8996
 
 # Audio
