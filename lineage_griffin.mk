@@ -58,3 +58,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := motorola/griffin/griffin:8.0.0/OPL27.76-51/58:user/release-keys
 TARGET_VENDOR := motorola
+
+
+# Sakura stuff
+SAKURA_MAINTAINER := SirRGB
+SAKURA_BUILD_TYPE := coregapps
