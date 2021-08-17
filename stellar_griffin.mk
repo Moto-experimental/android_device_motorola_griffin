@@ -23,12 +23,13 @@ $(call inherit-product, device/motorola/griffin/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/stellar/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
+DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay-weeb
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -42,7 +43,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_NAME := lineage_griffin
+PRODUCT_NAME := stellar_griffin
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := griffin
 PRODUCT_MODEL := Moto Z
@@ -58,3 +59,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := motorola/griffin/griffin:8.0.0/OPL27.76-51/58:user/release-keys
 TARGET_VENDOR := motorola
+
+
+# additional Amy stuff
+TARGET_USES_BLUR := true

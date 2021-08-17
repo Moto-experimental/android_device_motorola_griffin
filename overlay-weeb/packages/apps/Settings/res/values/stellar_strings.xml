@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Maintainer Info -->
+    <string name="stellar_maintainer">SirRGB</string>
+
+    <!-- Stellar Device Info -->
+    <string name="stellar_device_name_summary">Motorola Moto Z</string>
+    <string name="stellar_chipset_type_summary">Qualcomm Snapdragon 820</string>
+    <string name="stellar_gpu_summary">Qualcomm Adreno 530</string>
+    <string name="stellar_camera_mp_summary">13MP Camera</string>
+    <string name="stellar_screen_type_summary">AMOLED QHD 5.5" Screen</string>
+
+</resources>
