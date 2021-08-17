@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_griffin.mk
+    $(LOCAL_DIR)/stellar_griffin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_griffin-user \
-    lineage_griffin-userdebug \
-    lineage_griffin-eng
+    stellar_griffin-user \
+    stellar_griffin-userdebug \
+    stellar_griffin-eng
