@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stellar_griffin.mk
+    $(LOCAL_DIR)/amy_griffin.mk
 
 COMMON_LUNCH_CHOICES := \
-    stellar_griffin-user \
-    stellar_griffin-userdebug \
-    stellar_griffin-eng
+    amy_griffin-user \
+    amy_griffin-userdebug \
+    amy_griffin-eng
