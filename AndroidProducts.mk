@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/amy_griffin.mk
+    $(LOCAL_DIR)/derp_griffin.mk
 
 COMMON_LUNCH_CHOICES := \
-    amy_griffin-user \
-    amy_griffin-userdebug \
-    amy_griffin-eng
+    derp_griffin-user \
+    derp_griffin-userdebug \
+    derp_griffin-eng
