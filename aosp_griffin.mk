@@ -23,7 +23,7 @@ $(call inherit-product, device/motorola/griffin/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
@@ -39,7 +39,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_NAME := lineage_griffin
+PRODUCT_NAME := aosp_griffin
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := griffin
 PRODUCT_MODEL := XT1650
