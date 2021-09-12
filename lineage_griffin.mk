@@ -62,4 +62,4 @@ TARGET_VENDOR := motorola
 
 # Sakura stuff
 SAKURA_MAINTAINER := SirRGB
-SAKURA_BUILD_TYPE := coregapps
+SAKURA_BUILD_TYPE := vanilla
