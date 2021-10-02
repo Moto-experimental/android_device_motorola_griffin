@@ -67,7 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    net.sourceforge.opencamera_80 \
+    snap \
     libbson.vendor \
     libwui \
     camera.device@3.2-impl:32 \
