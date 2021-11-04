@@ -57,14 +57,6 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
-# Camera
-PRODUCT_PACKAGES += \
-    libbson.vendor \
-    libwui \
-    camera.device@3.2-impl:32 \
-    android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.4-impl:32
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.msm8996 \
@@ -115,6 +107,15 @@ PRODUCT_PACKAGES += \
 # LineageActions
 PRODUCT_PACKAGES += \
     LineageActions
+
+# Camera
+PRODUCT_PACKAGES += \
+    libbson.vendor \
+    libwui \
+    camera.device@3.2-impl:32 \
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.4-impl:32 \
+    android.frameworks.displayservice@1.0.vendor
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -393,7 +394,7 @@ PRODUCT_PACKAGES += \
     libjni_shim \
     libmemset_shim \
     libqsap_shim \
-    libshim_gpumaper
+    libgpu_mapper_shim
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
