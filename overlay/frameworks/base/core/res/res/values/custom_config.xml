@@ -6,4 +6,8 @@
 <resources>
     <!-- Whether or not we should show vendor mismatch message -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
+
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+         etc. dialogs. -->
+    <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 </resources>
