@@ -60,7 +60,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     libbson.vendor \
     libwui \
     camera.device@3.2-impl:32 \
