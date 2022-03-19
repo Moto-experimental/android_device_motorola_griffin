@@ -58,7 +58,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     libbson.vendor \
     libwui \
     camera.device@3.2-impl:32 \
