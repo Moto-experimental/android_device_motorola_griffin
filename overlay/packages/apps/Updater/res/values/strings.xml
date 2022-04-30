@@ -19,6 +19,6 @@
           {type} - Build type
           {incr} - Incremental version
     -->
-	<string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/SirRGB/ota_config/lineage-19.1/{device}.json</string>
- 	<string name="changelog_url" translatable="false">https://raw.githubusercontent.com/SirRGB/ota_config/lineage-19.1/{device}.txt</string>
+	<string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/SirRGB/ota_config/crdroid-8/{device}.json</string>
+ 	<string name="changelog_url" translatable="false">https://raw.githubusercontent.com/SirRGB/ota_config/crdroid-8/{device}.txt</string>
 </resources>
