@@ -66,9 +66,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.endcall.delay=250 \
     persist.vendor.audio.fluence.voicecomm=true
 
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.qcom.bluetooth.soc=rome
+    vendor.qcom.bluetooth.soc=rome \
+    bluetooth.device.class_of_device=90,2,12
 
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
