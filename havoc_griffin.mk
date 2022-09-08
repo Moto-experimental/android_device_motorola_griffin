@@ -23,7 +23,7 @@ $(call inherit-product, device/motorola/griffin/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
@@ -31,15 +31,19 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
-TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_BOOT_ANIMATION_RES := 1440
+
+HAVOC_MAINTAINER := SirRGB
+
+# Gapps
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_NAME := lineage_griffin
+PRODUCT_NAME := havoc_griffin
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := griffin
 PRODUCT_MODEL := XT1650

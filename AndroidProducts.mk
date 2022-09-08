@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_griffin.mk
+    $(LOCAL_DIR)/havoc_griffin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_griffin-user \
-    lineage_griffin-userdebug \
-    lineage_griffin-eng
+    havoc_griffin-user \
+    havoc_griffin-userdebug \
+    havoc_griffin-eng
