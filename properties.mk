@@ -83,6 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.hardware.power.operating_voltage_mv=3300 \
     vendor.qcom.bluetooth.soc=rome
 
 # Camera
