@@ -66,6 +66,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.endcall.delay=250 \
     persist.vendor.audio.fluence.voicecomm=true \
     bluetooth.device.class_of_device=90,2,12 \
+    bluetooth.device.default_name=Moto Z
     bluetooth.profile.a2dp.source.enabled=true \
     bluetooth.profile.asha.central.enabled=true \
     bluetooth.profile.avrcp.target.enabled=true \
