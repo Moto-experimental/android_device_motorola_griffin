@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1 \
     android.hardware.drm@1.3-service.clearkey
 
 # Display
@@ -272,6 +273,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     motorola.hardware.health@1.0.vendor
 
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1 \
+    libandroid_net \
+    netutils-wrapper-1.0
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc \
@@ -402,6 +409,10 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service.griffin
+
+# Vendor libstdc++
+PRODUCT_PACKAGES += \
+    libstdc++
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
