@@ -68,7 +68,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle \
     libtinyxml \
     libtinycompress \
@@ -122,16 +121,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    services-ext
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.1.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -146,16 +140,11 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     hwcomposer.msm8996 \
     libdisplayconfig \
-    libgenlock \
     libqdMetaData.system
 
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
-
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -192,15 +181,13 @@ PRODUCT_PACKAGES += \
 
 # HW crypto
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
-    vendor.qti.hardware.cryptfshw
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -212,7 +199,6 @@ PRODUCT_COPY_FILES += \
 
 #IMS Shim
 PRODUCT_PACKAGES += \
-    libbase_shim \
     libshim_libimsmedia
 
 # IMS
@@ -285,11 +271,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    libnfc \
     com.android.nfc_extras \
     NfcNci \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
     SecureElement \
     Tag \
     android.hardware.nfc@1.1-service
@@ -302,7 +285,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libhypv_intercept \
-    libextmedia_jni \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -382,8 +364,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service \
-    sensors.msm8953
+    android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
@@ -438,15 +419,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hostapd \
     ipacm \
-    ipacm-diag \
     IPACM_cfg.xml \
     wificond \
-    wifilogd \
     libwpa_client \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
-    wifi_symlinks \
     libnfnetlink \
     libnetfilter_conntrack
 
