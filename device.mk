@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.1 \
+    android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # Display
@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     android.system.net.netd@1.1 \
+    android.system.net.netd@1.1.vendor \
     libandroid_net \
     netutils-wrapper-1.0
 
@@ -367,6 +368,8 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0 \
+    android.hardware.radio@1.1.vendor \
+    android.hardware.radio@1.1 \
     librmnetctl \
     libprotobuf-cpp-full \
     libprotobuf-cpp-lite \
@@ -424,7 +427,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
-    libstdc++
+    libstdc++.vendor
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
