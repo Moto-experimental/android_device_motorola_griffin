@@ -85,6 +85,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hardware.power.operating_voltage_mv=3300 \
+    persist.bluetooth.bluetooth_audio_hal.disabled=false \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
     vendor.qcom.bluetooth.soc=rome
 
 # Camera
