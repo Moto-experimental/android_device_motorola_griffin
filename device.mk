@@ -308,9 +308,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v28.so
-
 # QCOM
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
@@ -352,8 +349,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.1 \
     android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-lite \
     libqsap_sdk
 
 # Seccomp policy
@@ -372,12 +367,12 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libcutils_shim \
+    libcutils_shim.vendor \
     libjustshoot_shim \
     libjni_shim \
     libmemset_shim \
     libqsap_shim \
-    libgpu_mapper_shim \
-    libcutils_shim.vendor
+    libgpu_mapper_shim
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
