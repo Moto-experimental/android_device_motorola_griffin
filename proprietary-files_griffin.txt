@@ -81,8 +81,6 @@ vendor/lib64/libsensorhub.so
 vendor/etc/firmware/sensorhubfw.bin|b956f1798d1afefca2ef6dbacc728969f6ea1dbc
 lib/libiio.so:vendor/lib/libiio.so
 lib64/libiio.so:vendor/lib64/libiio.so
-vendor/lib64/libsensor1.so
-vendor/lib/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib/libsensor_reg.so
 lib/lib_motsensorlistener.so:vendor/lib/lib_motsensorlistener.so
