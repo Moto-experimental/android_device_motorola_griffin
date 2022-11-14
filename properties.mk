@@ -169,7 +169,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     iorapd.readahead.enable=false \
     iorapd.perfetto.enable=false \
-    ro.iorapd.enable=false
+    ro.iorapd.enable=false \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # Mods
 PRODUCT_PROPERTY_OVERRIDES += \
