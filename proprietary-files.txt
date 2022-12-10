@@ -401,8 +401,8 @@ lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so
 vendor/lib64/hw/fingerprint.msm8996.so
 
-# Gatekeeper - griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
-vendor/lib64/hw/gatekeeper.msm8996.so
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8996.so
 
 # GPS
 vendor/bin/garden_app
@@ -511,6 +511,9 @@ vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
 
+# Keymaster
+vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so
+
 # Media
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
@@ -592,12 +595,6 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
-# Keystore - griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
-vendor/lib64/hw/keystore.msm8996.so
-
-# Keymaster - griffin-user 8.0.0 OPL27.76-71-2-3 3 release-keys
-vendor/lib64/libkeymasterprovision.so
 
 # ModService - from nash
 etc/permissions/com.motorola.aov.xml|e62f765d60a7e39f4a33437f5626ecf0e77c1dba
