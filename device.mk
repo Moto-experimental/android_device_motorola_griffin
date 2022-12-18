@@ -192,11 +192,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.griffin
 
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
-    vendor.qti.hardware.cryptfshw
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
