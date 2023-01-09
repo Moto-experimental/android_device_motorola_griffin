@@ -1,3 +1,4 @@
+
 ### All blobs from this list, unless pinned and noted as otherwise,
 ##  are from deen_sprout-user 10 QPK30.54-22-27 92b8a release-keys
 
@@ -12,10 +13,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 vendor/lib64/libmdsprpc.so
-
-# AptX
-lib64/libaptX_encoder.so
-lib64/libaptXHD_encoder.so
 
 # Audio
 vendor/lib/libacdb-fts.so
