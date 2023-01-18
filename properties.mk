@@ -145,6 +145,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.gt_library=libqti-gt.so \
     ro.vendor.at_library=libqti-at.so \
+    ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.perf.scroll_opt=true
 
 # Play Store
@@ -259,6 +260,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Time daemon
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
+
+# Vendor Extension
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
