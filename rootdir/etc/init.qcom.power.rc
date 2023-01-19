@@ -131,8 +131,6 @@ on enable-low-power
     # Set perfd properties
     setprop vendor.post_boot.parsed 1
 
-    setprop sys.io.scheduler "bfq"
-
     write /sys/block/sda/queue/read_ahead_kb 1024
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sda/queue/iostats 1
