@@ -10,4 +10,26 @@
     <!-- List of comma separated package names for which we the system will not show crash, ANR,
          etc. dialogs. -->
     <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
+
+    <!-- aicp overlays -->
+    <!-- Additional, device specific overlays -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
+    <!-- disable AOD by default -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- Enable Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
+    <!-- no EGL rendering? -->
+    <bool name="config_animateScreenLights">false</bool>
+
+    <!-- BurnIn -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- System info -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
 </resources>
