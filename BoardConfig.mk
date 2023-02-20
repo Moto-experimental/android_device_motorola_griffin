@@ -93,11 +93,18 @@ TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-#BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
-BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1 app_setting.use_32bit_app_setting=1 kpti=1
+BOARD_KERNEL_CMDLINE := \
+    androidboot.hardware=qcom \
+    user_debug=31 msm_rtb.filter=0x37 \
+    ehci-hcd.park=3 \
+    lpm_levels.sleep_disabled=1 \
+    cma=32M@0-0xffffffff \
+    sched_enable_hmp=1 \
+    sched_enable_power_aware=1 \
+    app_setting.use_32bit_app_setting=1 \
+    kpti=1 \
+    cnsscore.pcie_link_down_panic=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += cnsscore.pcie_link_down_panic=1
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DT := true
