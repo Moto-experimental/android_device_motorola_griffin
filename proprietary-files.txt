@@ -190,6 +190,9 @@ vendor/lib/libseemore.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 
+# Camera from user-8.1.0-OPP28.85-19-4-2-3447de-release-keys
+vendor/lib/libllvd_smore.so|d08432b63c6c2863e7a197b52475df64b10b5e13
+
 # Camera
 vendor/lib/libmot_gpu_mapper.so
 
