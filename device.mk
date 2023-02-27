@@ -376,7 +376,8 @@ PRODUCT_PACKAGES += \
     libjni_shim \
     libmemset_shim \
     libqsap_shim \
-    libgpu_mapper_shim
+    libgpu_mapper_shim \
+    libcutils_shim.vendor
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
