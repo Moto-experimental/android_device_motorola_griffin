@@ -136,44 +136,10 @@ AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := false
-BOARD_HAS_QCA_BT_ROME := true
-
-# Camera
-BOARD_QTI_CAMERA_32BIT_ONLY := true
-
-# Enable peripheral manager
-TARGET_PER_MGR_ENABLED := true
-
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := msm8996
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 LOC_HIDL_VERSION := 3.0
-
-# NFC
-BOARD_NFC_CHIPSET := pn544
-
-# Malloc
-MALLOC_SVELTE := true
-
-# SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
-BOARD_VENDOR_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy-mods/vendor
-BOARD_VENDOR_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy-mods/private
-SELINUX_IGNORE_NEVERALLOWS := true
-
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/product/lib64/libimsmedia_jni.so|libshim_libimsmedia.so \
-    /vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so
-
-# Treble
-PRODUCT_FULL_TREBLE_OVERRIDE := true
-BOARD_VNDK_VERSION := current
-PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
@@ -183,12 +149,42 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_DEVICE_DIRS += $(PLATFORM_PATH)
 BOARD_RAMDISK_USE_XZ := true
 
-# RIL
-PROTOBUF_SUPPORTED := true
-
 # Root
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
+
+# RIL
+PROTOBUF_SUPPORTED := true
+
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+BOARD_VNDK_VERSION := current
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
+# NFC
+BOARD_NFC_CHIPSET := pn544
+
+# SELinux
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy-mods/vendor
+BOARD_VENDOR_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy-mods/private
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := false
+BOARD_HAS_QCA_BT_ROME := true
+
+# SHIMS
+TARGET_LD_SHIM_LIBS := \
+    /system/product/lib64/libimsmedia_jni.so|libshim_libimsmedia.so \
+    /vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so
+
+# Camera
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+
+# Enable peripheral manager
+TARGET_PER_MGR_ENABLED := true
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2021-10-01
@@ -210,8 +206,9 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Hacks
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+SELINUX_IGNORE_NEVERALLOWS := true
+RELAX_USES_LIBRARY_CHECK := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
-RELAX_USES_LIBRARY_CHECK := true
