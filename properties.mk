@@ -157,7 +157,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.vendor.dbg.ims_volte_enable=1 \
     persist.vendor.ims.disableADBLogs=2 \
     persist.vendor.ims.disableDebugLogs=0 \
     persist.vendor.ims.disableQXDMLogs=0 \
