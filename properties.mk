@@ -257,3 +257,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Cipher maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cipher.maintainer=SirRGB
