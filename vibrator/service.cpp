@@ -52,21 +52,21 @@ status_t registerVibratorService() {
         ALOGE("Failed to open %s (%d): %s", VTG_DEFAULT, error, strerror(error));
         return -error;
     }
-    
+
     std::ofstream amplitude{VTG_LEVEL};
     if (!amplitude) {
         int error = errno;
         ALOGE("Failed to open %s (%d): %s", VTG_LEVEL, error, strerror(error));
         return -error;
     }
-    
+
     std::ifstream vtg_min{VTG_MIN};
     if (!vtg_min) {
         int error = errno;
         ALOGE("Failed to open %s (%d): %s", VTG_MIN, error, strerror(error));
         return -error;
     }
-    
+
     std::ifstream vtg_max{VTG_MAX};
     if (!vtg_max) {
         int error = errno;

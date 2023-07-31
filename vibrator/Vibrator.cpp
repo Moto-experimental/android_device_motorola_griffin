@@ -125,12 +125,12 @@ Return<Status> Vibrator::setAmplitude(uint8_t amplitude) {
     if (amplitude == 0) {
         return Status::BAD_VALUE;
     }
-    
+
     if (isTabletop() && timeout > 100 && amplitude > 96) {
         amplitude = 96;
         ALOGI("On a table, lowering amplitude");
     }
-    
+
     // Scale the voltage such that an amplitude of 0 is minVoltage, an amplitude of 255 is
     // maxVoltage, and there are equal steps for every value in between.
     long voltage =
