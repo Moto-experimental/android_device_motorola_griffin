@@ -27,15 +27,11 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
-ONLY_FIRMWARE=
 KANG=
 SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
-        --only-firmware )
-                ONLY_FIRMWARE=true
-                ;;
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
                 ;;
@@ -141,27 +137,9 @@ function blob_fixup() {
     esac
 }
 
-function prepare_firmware() {
-    if [ "${SRC}" != "adb" ]; then
-        local STAR="${ANDROID_ROOT}"/lineage/scripts/motorola/star.sh
-        for IMAGE in bootloader radio; do
-            if [ -f "${SRC}/${IMAGE}.img" ]; then
-                echo "Extracting Motorola star image ${SRC}/${IMAGE}.img"
-                sh "${STAR}" "${SRC}/${IMAGE}.img" "${SRC}"
-            fi
-        done
-    fi
-}
-
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-if [ -z "${ONLY_FIRMWARE}" ]; then
-    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-fi
-
-if [ -z "${SECTION}" ]; then
-    extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"
-fi
+extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
